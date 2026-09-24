@@ -100,7 +100,6 @@ A multi-portal enterprise platform serving Australia's agricultural recruitment 
 <td width="50%" valign="top">
 
 #### Image Upscalar - AI-Powered Image Enhancement
-**Kcube AI** | [GitHub](https://github.com/kcube-ai/upscaler-image)
 
 Full-stack SaaS platform for AI-driven image upscaling, restoration, enhancement, and photo-to-illustration conversion with subscription billing and credit-based usage.
 
@@ -126,7 +125,6 @@ Full-stack SaaS platform for AI-driven image upscaling, restoration, enhancement
 <td width="50%" valign="top">
 
 #### Supavest Investor Portal
-**Kcube AI** | [GitHub](https://github.com/kcube-ai/supavest-investor-portal)
 
 Digital platform streamlining investor communication with real-time construction project tracking, financial document management, and automated HubSpot CRM synchronization.
 
@@ -151,7 +149,6 @@ Digital platform streamlining investor communication with real-time construction
 <td width="50%" valign="top">
 
 #### IntellaQ - AI Enterprise Knowledge Assistant
-**Kcube AI** | [GitHub](https://github.com/kcube-ai/intellaquest)
 
 Intelligent enterprise knowledge assistant that synthesizes information from multiple data sources using hybrid AI search - combining vector embeddings, keyword search, and SQL agent capabilities.
 
@@ -177,7 +174,6 @@ Intelligent enterprise knowledge assistant that synthesizes information from mul
 <td width="50%" valign="top">
 
 #### TL-GoogleAuth - Credential Management Platform
-**TripleK Tech** | [GitHub](https://github.com/triplek-tech/tl-googleauth)
 
 Enterprise platform for managing Google Service Account credentials with automated key rotation, secure vault storage, and integrated monitoring.
 
