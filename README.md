@@ -54,6 +54,9 @@ I lead cross-functional teams and manage delivery for multi-portal ecosystems wi
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Azure SQL](https://img.shields.io/badge/Azure%20SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Google Cloud Run](https://img.shields.io/badge/Cloud%20Run-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![BigQuery](https://img.shields.io/badge/BigQuery-669DF6?style=flat-square&logo=googlebigquery&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)
 
 **AI & Data**
 
@@ -61,6 +64,7 @@ I lead cross-functional teams and manage delivery for multi-portal ecosystems wi
 ![Azure Cognitive Search](https://img.shields.io/badge/Cognitive%20Search-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Google Gemini](https://img.shields.io/badge/Gemini%20API-4285F4?style=flat-square&logo=google&logoColor=white)
+![Anthropic Claude](https://img.shields.io/badge/Claude%20API-D97757?style=flat-square&logo=anthropic&logoColor=white)
 
 **Integrations & Services**
 
@@ -197,10 +201,35 @@ Enterprise platform for managing Google Service Account credentials with automat
 </td>
 <td width="50%" valign="top">
 
+#### DataXGrowth AI - Marketing Intelligence Platform
+
+Multi-tenant AI marketing intelligence agent for agencies that answers one question for every client, each reporting cycle: *what materially changed, why it matters, what evidence supports it, and what to do next* - delivered as a strategist-grade Slack digest.
+
+**What I built:**
+- 10 platform connectors via OAuth/API key/CSV: GA4, Google Ads, Search Console, HubSpot, Salesforce, Semrush, Asana, Fathom, Slack, Reddit
+- Self-serve client onboarding with tokenised invite links and Fernet-encrypted token storage
+- dbt data warehouse on BigQuery: 13 staging models, daily & weekly marts
+- Deterministic status engine - Red/Yellow/Green scoring for Traffic, Conversion, Paid Media & Data Quality using median/MAD baselines
+- 3-agent AI pipeline: Analyst (evidence-backed draft) -> Editor (client-safe strategist tone) -> Critic (rubric QA & trim)
+- Review queue with approval workflow, inline editing, and Slack delivery
+- Google SSO with domain-restricted admin access
+
+**Architecture:**
+- Core principle: *deterministic systems calculate, AI interprets*
+- Cloud Run service + Cloud Run Jobs for daily sync, dbt runs, and digest scheduling
+- CI/CD with GitHub Actions to GCP Artifact Registry
+
+**Tech:** FastAPI, React 19, TypeScript, TanStack Query, PostgreSQL, BigQuery, dbt, Anthropic Claude, GCP Cloud Run, Docker, GitHub Actions
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
 #### What I Bring to the Table
 
 **As a Senior Engineer:**
-- Design and implement scalable cloud-native architectures on Azure
+- Design and implement scalable cloud-native architectures on Azure & GCP
 - Build full-stack applications across multiple frameworks and languages
 - Integrate complex third-party APIs with resilient sync pipelines
 - Implement enterprise-grade auth (OAuth2, JWT, B2C, MSAL, 2FA)
@@ -216,7 +245,8 @@ Enterprise platform for managing Google Service Account credentials with automat
 **Key Strengths:**
 - Event-driven & serverless architectures
 - Multi-tenant enterprise platforms
-- AI/ML integration (OpenAI, Gemini, Cognitive Search)
+- AI/ML integration (OpenAI, Claude, Gemini, Cognitive Search)
+- Multi-agent LLM pipelines with deterministic guardrails
 - Payment systems (Stripe, billing, subscriptions)
 - Real-time data synchronization pipelines
 
